@@ -15,3 +15,9 @@ data1 = r.json()
 for x in data1['results']:
     full_name = x['name']['first'] + " " + x['name']['last']
     male_list.append(full_name)
+
+paylod2 = {
+    'results': 10,
+    'gender': 'female'
+}
+
