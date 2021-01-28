@@ -27,3 +27,11 @@ for x in data2['results']:
     full_name = x['name']['first'] + " " + x['name']['last']
     female_list.append(full_name)
 
+full_list = [
+    male_list,
+    female_list
+]
+
+f = open("data.json", "w")
+f.write(json.dumps(full_list, indent=4))
+f.close()
