@@ -32,3 +32,7 @@ full_list = [
     male_list,
     female_list
 ]
+
+f = open("data.json", "w")
+f.write(json.dumps(full_list, indent=4))
+f.close()
