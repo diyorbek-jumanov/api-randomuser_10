@@ -20,4 +20,10 @@ paylod2 = {
     'results': 10,
     'gender': 'female'
 }
+q = requests.get(url, paylod2)
+data2 = q.json()
+
+for x in data2['results']:
+    full_name = x['name']['first'] + " " + x['name']['last']
+    female_list.append(full_name)
 
